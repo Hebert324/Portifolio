@@ -17,6 +17,10 @@
     margin-right: 1.5rem;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: #282a36;
     font-family: 'Source Sans Pro', sans-serif;
@@ -160,15 +164,15 @@ main .wrapper a:hover{
 /*----------- CARDS ----------------- */
 
 .projects{
-    max-width: 50rem;
+    max-width: 100%;
     margin: 0 auto;
 }
 
 .cards {
-    max-width: 62.5rem;
+    max-width: 77.5rem;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
 }
 
@@ -194,24 +198,56 @@ main .wrapper a:hover{
  
 .info {
     display: grid;
-    grid-template-columns: 1fr;
-    padding: 0.31rem 1.25rem;
-    background-color: #40cf64;
-    border-radius: 1.25rem;
-    width: 15.625rem;
+    padding: 1rem 1.25rem;
     place-items: center;
     margin: 0 auto;
     cursor: pointer;
     text-decoration: none;
-    color: white;
+    color: #40cf64;
 }
 
-@media (max-width: 500px) {
+.info:hover {
+    color: #00ff40;
+}
+
+.info.disabled {
+    color: #727272;
+    cursor: default;
+}
+
+.card-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/*----------- SERVICES ----------------- */
+
+.services{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.services .cards2 {
+    max-width: 65rem;
+    height: 25rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.services .card-image2 img{
+    width: 80px;
+    display: grid;
+    margin: 1rem auto;
+}
+
+@media (max-width: 970px) {
     .cards {
         max-width: 62.5rem;
         margin: 0 0.25rem;
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 1.25rem;
     }
     
@@ -226,5 +262,15 @@ main .wrapper a:hover{
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .cards {
+        max-width: 62.5rem;
+        margin: 0 0.25rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
     }
 }
