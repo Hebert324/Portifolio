@@ -178,7 +178,6 @@ main .wrapper a:hover{
 
 .card {
     background-color: #16161a;
-    padding-bottom: 1rem;
     margin-bottom: 1rem;
     border-radius: 4px;
     padding-top: 1rem;
@@ -218,6 +217,7 @@ main .wrapper a:hover{
 .card-buttons {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: 1.125rem;
 }
 
 /*----------- SERVICES ----------------- */
