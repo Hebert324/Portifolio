@@ -22,7 +22,7 @@ html {
 }
 
 body{
-    background-color: #282a36;
+    background-color: #121213;
     font-family: 'Source Sans Pro', sans-serif;
     color: white;
 }
@@ -41,13 +41,13 @@ body{
     margin-top: 2rem;
     margin-bottom: 1.5rem;
 }
-
+  
 /*----------- HEADER É NAV ----------------- */
 
 header {
-    padding: 2rem;
-    border-bottom: 0.2rem solid #333;
-    background-color: #282a36;
+    padding: 1.3rem;
+    border-bottom: 0.1rem solid #46af60ad;
+    background-color: #101011;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -132,10 +132,8 @@ main .wrapper span {
 }
 
 main .wrapper h2 {
-    font-size: 1.3rem;
-    line-height: 2.125rem;
+    font-size: 1.5rem;
     font-weight: normal;
-    margin-top: 0.3rem;
     opacity: 0.9;
 }
 
@@ -146,6 +144,24 @@ main .wrapper p {
     line-height: 2rem;
     margin-bottom: 2rem;
 }
+
+main .wrapper p::after {
+    content: "|";
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .9s infinite;
+    color: #50fa7b;
+}
+
+@keyframes pisca{
+    0%, 100% {
+    opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
 main .wrapper a {
     text-decoration: none;
     color: var(--color-green);
@@ -177,10 +193,12 @@ main .wrapper a:hover{
 }
 
 .card {
-    background-color: #16161a;
+    background-color: #1c1c1d;
     margin-bottom: 1rem;
     border-radius: 4px;
     padding-top: 1rem;
+    border: 3px solid #121213;
+    transition: 0.5s;
 }
 
 .card-image img{
@@ -220,6 +238,18 @@ main .wrapper a:hover{
     margin-top: 1.125rem;
 }
 
+.card:hover{
+    border: 3px solid var(--color-green);
+}
+
+.cards2 .title{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 0rem;
+    margin-bottom: 0;
+}
+
 /*----------- SERVICES ----------------- */
 
 .services{
@@ -248,23 +278,6 @@ main .wrapper a:hover{
     margin: 0.6rem auto;
 }
 
-.card{
-    border: 3px solid #282A36;
-    transition: 0.5s;
-}
-
-.card:hover{
-    border: 3px solid var(--color-green);
-}
-
-.cards2 .title{
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-top: 0rem;
-    margin-bottom: 0;
-}
-
 .services .cards2 .card-content {
     padding: 5px 55px;
     text-align: center;
@@ -279,18 +292,73 @@ main .wrapper a:hover{
     grid-template-columns: 1fr 1fr;
     margin-left: auto;
     margin-right: auto;
-    width: 1024px;
+    width: 1090px;
+    gap: 2rem;
 }
 
 .skills-content .skill-image img {
-    width: 496px;
-    height: 300px;
+    width: 510px;
     border-radius: 4px;
+    margin-top: 40px;
+    transition: 0.3s;
+    /* box-shadow: 0 4px 10px #50fa7a17; */
+    border: solid 1px #50fa7b;
+    box-shadow: 0 2px 10px 0 rgb(163 255 191 / 26%);
 }
 
 .skill.container {
     margin-bottom: 2rem;
 }
+
+.text-skills{
+    margin-bottom: 2rem;
+}
+.text-skills h1{
+    margin-bottom: 0.5rem;
+}
+.skills-names{
+    display: flex;
+    align-items: center;
+}
+
+.skills-bar{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: var(--color-green);
+    height: .25rem;
+    border-radius: .5rem;
+    z-index: -10;
+}
+.skills-html{
+    width: 100%;
+}
+.skills-css{
+    width: 90%;
+}
+.skills-js{
+    width: 80%;
+}
+.skills-node{
+    width: 50%;
+}
+.skills-react{
+    width: 50%;
+}
+
+.skills-data{
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: relative;
+font-weight: 600;
+padding: .7rem 1rem;
+margin-bottom: 2rem;
+border-radius: .5rem;
+box-shadow: 0 2px 10px 0 #a3ffbf26;
+}
+
+/* Reesponsivo */
 
 @media (max-width: 970px) {
     .cards {

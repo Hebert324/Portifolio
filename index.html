@@ -7,9 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hebert Rocha</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./images/fonts/style.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 
 <body>
+
+    <!-- header -->
     <header>
         <div>
             <h1>Portifólio</h1>
@@ -17,18 +22,19 @@
         <div>
             <a href="#">Home</a>
             <a href="#projetos">Projetos</a>
-            <a href="#">Serviços</a>
-            <a href="#">Conhecimentos</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#conhecimentos">Conhecimentos</a>
         </div>
     </header>
+
+    <!-- sobre min -->
     <main class="container">
         <div class="wrapper">
             <img src="https://github.com/hebert324.png" alt="Hebert Rocha">
             <h1>Hebert Rocha</h1>
             <span></span>
-            <h2>Desenvolvedor Full-Stack</h2>
-            <p>Meu nome e Hebert, tenho 18 anos, sou apaixonado por tecnologia, estou a cada dia buscando aprender mais
-                sobre desenvolvimento web.</p>
+            <h2 class="effect-text1">Desenvolvedor Full-Stack</h2>
+            <p class="effect-text2">Meu nome e Hebert, tenho 18 anos, sou apaixonado por tecnologia, estou a cada dia buscando aprender mais sobre desenvolvimento web.</p>
             <a href="https://github.com/Hebert324" target="_blank">Github</a>
             <a href="https://www.linkedin.com/in/hebert-rocha-62318a1b3/" target="_blank">Linkedin</a>
             <a href="https://www.instagram.com/hebert.rc/?hl=pt-br" target="_blank">Instagram</a>
@@ -37,6 +43,7 @@
 
     <div class="divider"></div>
 
+    <!-- Projetos -->
     <section class="projects container" id="projetos">
         <h1 class="title">Projetos</h1>
 
@@ -110,7 +117,8 @@
 
     <div class="divider"></div>
 
-    <section class="services container">
+    <!-- Serviços -->
+    <section class="services container" id="servicos">
         <h1 class="title">Serviços</h1>
 
         <div class="cards2">
@@ -139,7 +147,7 @@
                 </div>
                 <h1 class="title">Código Semântico</h1>
                 <div class="card-content">
-                    <p>Código organizado e semântico, estratégia e monitoração para seu negócio, utilização de SEO para melhorar as buscas do site.</p>
+                    <p>Código organizado e semântico, estratégia de monitoração para seu negócio, utilização de SEO para melhorar as buscas do site.</p>
                 </div>
             </div>
         </div>
@@ -147,21 +155,45 @@
 
     <div class="divider"></div>
 
-    <section class="skill container">
+    <!-- conhecimentos -->
+    <section class="skill container" id="conhecimentos">
         <h1 class="title">Conhecimentos</h1>
 
         <div class="skills-content">
             <div class="skills">
-                <div>
-                    <h1>Habilidades profissionais</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
+                <div class="text-skills">
+                    <h1>Minhas Experiências:</h1>
                 </div>
 
-                <div class="skill-bar">HTML</div>
-                <div class="skill-bar">CSS</div>
-                <div class="skill-bar">JavaScript</div>
-                <div class="skill-bar">Node.js</div>
-                <div class="skill-bar">React</div>
+                <div class="skills-data">
+                    <div class="skills-names">HTML</div>
+                    <div class="skills-bar skills-html"></div>
+                    <div><span class="skills-percentage">100%</span></div>
+                </div>
+
+                <div class="skills-data">
+                    <div class="skills-names">CSS</div>
+                    <div class="skills-bar skills-css"></div>
+                    <div><span class="skills-percentage">90%</span></div>
+                </div>
+
+                <div class="skills-data">
+                    <div class="skills-names">JavaScript</div>
+                    <div class="skills-bar skills-js"></div>
+                    <div><span class="skills-percentage">80%</span></div>
+                </div>
+                
+                <div class="skills-data">
+                    <div class="skills-names">Node.js</div>
+                    <div class="skills-bar skills-node"></div>
+                    <div><span class="skills-percentage">50%</span></div>
+                </div>
+
+                <div class="skills-data">
+                    <div class="skills-names">React</div>
+                    <div class="skills-bar skills-react"></div>
+                    <div><span class="skills-percentage">50%</span></div>
+                </div>
             </div>
         
             <div class="skill-image">
@@ -169,6 +201,23 @@
             </div>
         </div>
     </section>
+
+    <div class="divider"></div>
+
+    <!-- Contato -->
+
+    <section class="contact container" id="contato">
+        <h1 class="title">Contato</h1>
+    </section>
+
+    <!-- Fotter -->
+
+    <footer>
+
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
