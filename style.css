@@ -41,6 +41,11 @@ body{
     margin-top: 2rem;
     margin-bottom: 1.5rem;
 }
+
+a {
+    text-decoration: none;
+    color: white;
+}
   
 /*----------- HEADER É NAV ----------------- */
 
