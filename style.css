@@ -104,6 +104,73 @@ header div a:hover::after {
   width: 100%;
 }
 
+/* MENU */
+
+header .menu-mobile{
+    display: none;
+    cursor: pointer;
+}
+
+header .menu-mobile-x{
+    visibility: hidden;
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    top: -1.5rem;
+    transition: 0.2s;
+}
+
+header .menu ul{
+    display: flex;
+}
+
+header .menu ul li{
+    list-style: none;
+}
+
+header.show .menu {
+    opacity: 1;
+    visibility: visible;
+  
+    background: #121213;
+  
+    height: 100vh;
+    width: 100vw;
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+  
+    display: grid;
+    place-content: center;
+}
+
+header.show .menu ul {
+    display: grid;  
+}
+
+header.show .menu ul li{
+    margin-bottom: 50px; 
+}
+
+header.show .menu ul li a{
+    font-size: 1.5rem;
+}
+
+header.show .menu-mobile-x{
+    position: absolute;
+    visibility: visible;
+    opacity: 1;
+    top: 1.5rem;
+    right: 3rem;
+    transition: 0.3s;
+}
+
+header.show .menu .menu-mobile {
+    display: none;
+}
+
+
 /*----------- MAIN WRAPPER ----------------- */
 
 main {
@@ -251,14 +318,6 @@ main .wrapper a:hover{
     border: 3px solid var(--color-green);
 }
 
-.cards2 .title{
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-top: 0rem;
-    margin-bottom: 0;
-}
-
 /*----------- SERVICES ----------------- */
 
 .services{
@@ -268,13 +327,23 @@ main .wrapper a:hover{
 
 .services .cards2 {
     max-width: 65rem;
-    height: 25rem;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
 }
 
+.services .cards2 .card{
+    padding: 3rem 0;
+}
+
+.services .cards2 .title{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 0rem;
+    margin-bottom: 0;
+}
 .services .card-image2 img{
     width: 60px;
     display: grid;
@@ -435,12 +504,49 @@ main .wrapper a:hover{
 
 /* Reesponsivo */
 
-@media (max-width: 970px) {
-    .cards {
+@media (max-width: 1024px) {
+    .services .cards2 {
         max-width: 62.5rem;
-        margin: 0 0.25rem;
+        margin: 0 5rem;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: auto auto auto;
+        gap: 1.25rem;
+    }
+
+    .projects {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 970px) {
+
+    body{
+       overflow-x: hidden; 
+    }
+
+    header .menu ul{
+        display: none;
+    }
+
+    header .menu-desktop{
+        display: none;
+    }
+
+    header .menu-mobile{
+        display: flex;
+    }
+
+    .cards{
+        max-width: 62.5rem;
+        margin: 0 auto;
+        grid-template-columns: auto auto;
+    }
+
+    .services .cards2 {
+        max-width: 62.5rem;
+        margin: 0 5rem;
+        display: grid;
+        grid-template-columns: auto;
         gap: 1.25rem;
     }
     
@@ -456,14 +562,82 @@ main .wrapper a:hover{
         align-items: center;
         justify-content: center;
     }
+
+    .container{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .contact{
+        width: auto;
+    }
+
+    .skills-content{
+        display: initial;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+    }
+    
+    .skills-content img{
+        display: none;
+    }
 }
 
 @media (max-width: 700px) {
+    body{
+        overflow-x: hidden; 
+        max-width: 100%;
+    }
     .cards {
-        max-width: 62.5rem;
-        margin: 0 0.25rem;
+        max-width: 700px;
+        margin: 0 auto;
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: auto;
         gap: 1.25rem;
+    }
+
+    .card-image img{
+        width: 90%;
+    }
+
+    .services .cards2 {
+        max-width: 62.5rem;
+        margin: 0 3rem;
+        display: grid;
+        grid-template-columns: auto;
+        gap: 1.25rem;
+    }
+
+    .container{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .contact{
+        width: auto;
+    }
+
+    .skills-content{
+        display: initial;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+    }
+
+    .skills-content img{
+        display: none;
+    }
+
+    header .menu-desktop{
+        display: none;
+    }
+
+    header .menu-mobile{
+        display: flex;
+    }
+
+    header .menu-mobile.x{
+        display: none;
     }
 }
