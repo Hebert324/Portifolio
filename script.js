@@ -21,7 +21,7 @@ const sr = ScrollReveal({
 
 sr.reveal(
     `.wrapper, .divider, .cards, .card,
-    #about, .image, #about, .text,
+    #about, .image, #about, .text, .title,
     .services, .skill, .skills-data, .contact, input`,
     { delay: 100 }
 )
