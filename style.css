@@ -452,29 +452,11 @@ main .wrapper a:hover{
     width: 35%;
 }
 
-
-.contact-input{
-    width: 100%;
-    padding: 1rem;
-    outline: none;
-    border-radius: .5rem;
-    border: 1.5px solid var(--color-green);
-    margin-bottom: 2rem;
-}
-.contact-button{
-    width: 100%;
-    display: block;
-    border: none;
-    outline: none;
-    font-size: 1rem;
-    background-color: var(--color-green);
-    color: #fff;
-    padding: .75rem 2.5rem;
-    font-weight: 600;
-    border-radius: .5rem;
-}
-
 /* Footer */
+
+.footer{
+    transition: 0.3s;
+}
 
 .footer.container{
     margin-bottom: 20px;
@@ -494,13 +476,21 @@ main .wrapper a:hover{
     text-align: center;
 }
 
-.footer .sociais{
+.sociais{
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
+    align-items: center;
+    transition: 0.5s;
 }
-.footer .sociais img{
+
+.sociais img{
     margin: auto 1rem;
 }
+
+footer .sociais a:hover {
+    transform: translateY(-5px);
+  }
 
 /* Reesponsivo */
 
