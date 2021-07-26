@@ -282,7 +282,7 @@ main .wrapper a:hover{
     border-radius: 4px 4px 4px 0px;
     display: grid;
     margin: 1rem auto;
-    box-shadow: 8px -7px 1px 0px #ffffff;
+    /* box-shadow: 8px -7px 1px 0px #ffffff; */
 }
 
 .card-content {
