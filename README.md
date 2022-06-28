@@ -10,9 +10,7 @@ Este e um site portifólio desenvolvido por min para aprensentar meus projetos e
 ## :rocket: Tecnologias utilizadas:
 
 - HTML
-
 - CSS
-
 - JavaScript
 
 ### Acesse o projeto aqui: <a href="https://hebert-portifolio.netlify.app">Portifólio</a>
