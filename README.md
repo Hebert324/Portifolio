@@ -19,4 +19,4 @@ Este e um site portifólio desenvolvido por min para aprensentar meus projetos e
 
 ---
 
-Desenvolvido por [Hebert Rocha](https://www.linkedin.com/in/hebert-rocha-62318a1b3/) :wave: 
+Desenvolvido por [Hebert Rocha](https://www.linkedin.com/in/hebert-rc/) :wave: 
