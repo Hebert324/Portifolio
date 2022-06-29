@@ -15,6 +15,10 @@ Este e um site portifólio desenvolvido por min para aprensentar meus projetos e
 
 ### Acesse o projeto aqui: <a href="https://hebert-portifolio.netlify.app">Portifólio</a>
 
+## :memo: Licença
+
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](.github/LICENSE.md) para mais detalhes.
+
 ---
 
-Desenvolvido por [Hebert Rocha](https://www.linkedin.com/in/hebert-rc/) :wave: 
+Desenvolvido por [Hebert Rocha](https://www.linkedin.com/in/hebert-rc/) juntamente a [Rocketseat](https://app.rocketseat.com.br/dashboard) :wave:
